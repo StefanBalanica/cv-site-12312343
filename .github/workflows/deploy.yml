@@ -31,3 +31,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/browser
+          destination_dir: .          # ✅ pune fișierele direct în rădăcina branch-ului gh-pages
+          clean: true                 # ✅ curăță fișierele vechi înainte de deploy
