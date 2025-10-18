@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write  # ✅ permite push pe gh-pages branch
+  contents: write  # permite scrierea pe gh-pages
 
 jobs:
   build-and-deploy:
@@ -28,10 +28,13 @@ jobs:
       - name: Build Angular app
         run: npx ng build --configuration production --base-href "https://stefanbalanica.github.io/cv-site-12312343/"
 
+      - name: Verify build output
+        run: ls -R dist  # verifică în log dacă fișierele există
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4   # ✅ cea mai nouă versiune
+        uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./dist/browser
-          destination_dir: .   # pune fișierele direct în root
