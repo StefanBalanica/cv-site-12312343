@@ -1,0 +1,77 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "downloadCV": "Download CV",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate Applied Computer Science student at Transilvania University in Brașov, with a strong desire to understand how technology and people can understand and develop each other. I am particularly attracted to UI, UX, Frontend, Angular, TypeScript and many other modern technologies. I love to create intuitive user interfaces and optimize user experience through developing innovative solutions."
+  },
+  "skills": {
+    "title": "Skills",
+    "all": "All"
+  },
+  "projects": {
+    "title": "Projects",
+    "featured": "Featured Projects",
+    "all": "All Projects",
+    "demo": "Demo",
+    "github": "GitHub",
+    "travel-tales": {
+      "title": "Travel Tales",
+      "description": "Modern Angular 19 web application for personal travel journal with intuitive interface and dual view display."
+    },
+    "enjoy-cafe": {
+      "title": "Enjoy Café - Website",
+      "description": "Responsive Angular web application for \"Enjoy Café\" with modular architecture and shopping cart system."
+    },
+    "calculator-wpf": {
+      "title": "Desktop Calculator",
+      "description": "Desktop calculator application developed with WPF (.NET Framework) and MVVM principles."
+    },
+    "ether-game": {
+      "title": "Ether - Strategic Game",
+      "description": "Strategic game for 2 players inspired by X and O and Connect 4, with extended rules and strategic elements."
+    },
+    "online-library": {
+      "title": "Online Library",
+      "description": "Online library project developed at university with Java, Spring Boot and web interface."
+    },
+    "uni-e": {
+      "title": "Uni-e",
+      "description": "Project dedicated to future students to help them find the right university."
+    },
+    "x0-genetic-algorithm": {
+      "title": "X&0 - Genetic Algorithm",
+      "description": "University X&0 game project with genetic algorithm, developed by a team of 4 students."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "required": "Required field",
+    "invalidEmail": "Invalid email",
+    "tooShort": "Too short",
+    "success": "Message sent successfully!",
+    "error": "An error occurred. Please try again."
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "socialMedia": "Social Media",
+    "developedWith": "Developed with",
+    "usingAngular": "using Angular 18",
+    "allRightsReserved": "All rights reserved."
+  }
+}
