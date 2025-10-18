@@ -10,7 +10,7 @@
 
 - The download button is already configured in the hero section
 - It reads the `cvUrl` from `personal-info.json`
-- Current path: `assets/files/cv-stefan-balanica.pdf`
+- Current path: `./assets/files/cv-stefan-balanica.pdf`
 - The button will automatically download the PDF when clicked
 
 ## 📝 Steps to add your CV:

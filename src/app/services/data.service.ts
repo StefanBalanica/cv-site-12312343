@@ -10,15 +10,15 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   getPersonalInfo(): Observable<PersonalInfo> {
-    return this.http.get<PersonalInfo>('/data/personal-info.json');
+    return this.http.get<PersonalInfo>('./assets/data/personal-info.json');
   }
 
   getSkills(): Observable<Skill[]> {
-    return this.http.get<Skill[]>('/data/skills.json');
+    return this.http.get<Skill[]>('./assets/data/skills.json');
   }
 
   getProjects(): Observable<Project[]> {
-    return this.http.get<Project[]>('/data/projects.json');
+    return this.http.get<Project[]>('./assets/data/projects.json');
   }
 }
 
