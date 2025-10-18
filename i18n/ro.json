@@ -1,0 +1,77 @@
+{
+  "navigation": {
+    "home": "Acasă",
+    "about": "Despre",
+    "skills": "Abilități",
+    "projects": "Proiecte",
+    "contact": "Contact"
+  },
+  "hero": {
+    "downloadCV": "Download CV",
+    "contactMe": "Contactează-mă"
+  },
+  "about": {
+    "title": "Despre mine",
+    "description": "Sunt un student pasionat de Informatică Aplicată la Universitatea Transilvania din Brașov, cu o dorință puternică de a înțelege cum tehnologia și oamenii se pot înțelege și dezvolta reciproc. Mă atrag în special UI, UX, Frontend, Angular, TypeScript și multe alte tehnologii moderne. Îmi place să creez interfețe utilizator intuitive și să optimizez experiența utilizatorului prin dezvoltarea de soluții inovatoare."
+  },
+  "skills": {
+    "title": "Abilități",
+    "all": "Toate"
+  },
+  "projects": {
+    "title": "Proiecte",
+    "featured": "Proiecte evidențiate",
+    "all": "Toate proiectele",
+    "demo": "Demo",
+    "github": "GitHub",
+    "travel-tales": {
+      "title": "Travel Tales",
+      "description": "Aplicație web modernă Angular 19 pentru jurnalul personal de călătorii cu interfață intuitivă și vizualizare duală."
+    },
+    "enjoy-cafe": {
+      "title": "Enjoy Café - Site",
+      "description": "Aplicație web Angular responsive pentru \"Enjoy Café\" cu arhitectură modulară și sistem de shopping cart."
+    },
+    "calculator-wpf": {
+      "title": "Calculator Desktop",
+      "description": "Aplicație desktop de calculator dezvoltată cu WPF (.NET Framework) și principii MVVM."
+    },
+    "ether-game": {
+      "title": "Ether - Joc Strategic",
+      "description": "Joc strategic pentru 2 jucători inspirat din X și O și Connect 4, cu reguli extinse și elemente strategice."
+    },
+    "online-library": {
+      "title": "Online Library",
+      "description": "Proiect de bibliotecă online realizat la facultate cu Java, Spring Boot și interfață web."
+    },
+    "uni-e": {
+      "title": "Uni-e",
+      "description": "Proiect dedicat studenților viitori pentru a-i ajuta să găsească universitatea potrivită."
+    },
+    "x0-genetic-algorithm": {
+      "title": "X&0 - Genetic Algorithm",
+      "description": "Proiect universitar de joc X&0 cu algoritm genetic, dezvoltat în echipă de 4 studenți."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Nume",
+    "email": "Email",
+    "subject": "Subiect",
+    "message": "Mesaj",
+    "send": "Trimite",
+    "sending": "Se trimite...",
+    "required": "Câmp obligatoriu",
+    "invalidEmail": "Email invalid",
+    "tooShort": "Prea scurt",
+    "success": "Mesajul a fost trimis cu succes!",
+    "error": "A apărut o eroare. Încearcă din nou."
+  },
+  "footer": {
+    "quickLinks": "Link-uri rapide",
+    "socialMedia": "Social Media",
+    "developedWith": "Dezvoltat cu",
+    "usingAngular": "folosind Angular 18",
+    "allRightsReserved": "Toate drepturile rezervate."
+  }
+}
