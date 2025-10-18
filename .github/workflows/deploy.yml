@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write  # permite scrierea pe gh-pages
+  contents: write  # permite push pe gh-pages
 
 jobs:
   build-and-deploy:
@@ -26,10 +26,11 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npx ng build --configuration production --base-href "https://stefanbalanica.github.io/cv-site-12312343/"
-
-      - name: Verify build output
-        run: ls -R dist  # verifică în log dacă fișierele există
+        run: |
+          echo "Starting Angular build..."
+          npx ng build --configuration production --base-href "https://stefanbalanica.github.io/cv-site-12312343/"
+          echo "✅ Build finished. Listing dist/ folder:"
+          ls -R dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
