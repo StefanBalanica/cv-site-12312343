@@ -1,0 +1,47 @@
+<section class="projects container" data-aos="fade-up">
+  <h2 class="section-title">{{ projectsTitle$ | async }}</h2>
+
+  <div class="projects__featured" *ngIf="featuredProjects.length">
+    <h3>{{ featuredText$ | async }}</h3>
+    <div class="projects__grid">
+      <article class="projects__card" *ngFor="let p of featuredProjects">
+        <div class="projects__card-image">
+          <img [src]="p.image" [alt]="getProjectTitle(p.id) | async" loading="lazy" />
+        </div>
+        <div class="projects__card-content">
+          <h4 class="projects__card-title">{{ getProjectTitle(p.id) | async }}</h4>
+          <p class="projects__card-description">{{ getProjectDescription(p.id) | async }}</p>
+          <div class="projects__card-technologies">
+            <span class="tech-tag" *ngFor="let t of p.technologies">{{ t }}</span>
+          </div>
+          <div class="projects__card-actions">
+            <a class="btn btn--primary" *ngIf="p.demoUrl" [href]="p.demoUrl" target="_blank" rel="noopener">{{ demoText$ | async }}</a>
+            <a class="btn btn--secondary" *ngIf="p.githubUrl" [href]="p.githubUrl" target="_blank" rel="noopener">{{ githubText$ | async }}</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="projects__all" *ngIf="otherProjects.length">
+    <h3>{{ allText$ | async }}</h3>
+    <div class="projects__grid-all">
+      <article class="projects__card" *ngFor="let p of otherProjects">
+        <div class="projects__card-image">
+          <img [src]="p.image" [alt]="getProjectTitle(p.id) | async" loading="lazy" />
+        </div>
+        <div class="projects__card-content">
+          <h4 class="projects__card-title">{{ getProjectTitle(p.id) | async }}</h4>
+          <p class="projects__card-description">{{ getProjectDescription(p.id) | async }}</p>
+          <div class="projects__card-technologies">
+            <span class="tech-tag" *ngFor="let t of p.technologies">{{ t }}</span>
+          </div>
+          <div class="projects__card-actions">
+            <a class="btn btn--primary" *ngIf="p.demoUrl" [href]="p.demoUrl" target="_blank" rel="noopener">{{ demoText$ | async }}</a>
+            <a class="btn btn--secondary" *ngIf="p.githubUrl" [href]="p.githubUrl" target="_blank" rel="noopener">{{ githubText$ | async }}</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

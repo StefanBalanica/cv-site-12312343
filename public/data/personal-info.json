@@ -1,0 +1,13 @@
+{
+  "name": "Stefan-Valentin Bălănică",
+  "title": "Student Informatică Aplicată",
+  "subtitle": "Frontend Developer & UI/UX Enthusiast",
+  "email": "stefanbalanica22@yahoo.com",
+  "location": "Brașov, România",
+  "profileImage": "assets/images/profile.JPG",
+  "cvUrl": "assets/files/cv-stefan-balanica.pdf",
+  "about": "Sunt un student pasionat de Informatică Aplicată la Universitatea Transilvania din Brașov, cu o dorință puternică de a înțelege cum tehnologia și oamenii se pot înțelege și dezvolta reciproc. Mă atrag în special UI, UX, Frontend, Angular, TypeScript și multe alte tehnologii moderne. Îmi place să creez interfețe utilizator intuitive și să optimizez experiența utilizatorului prin dezvoltarea de soluții inovatoare.",
+  "socialLinks": {
+    "github": "https://github.com/StefanBalanica"
+  }
+}

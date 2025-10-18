@@ -1,0 +1,19 @@
+     <section class="skills container" data-aos="fade-up">
+       <h2 class="section-title">{{ skillsTitle$ | async }}</h2>
+       <div class="skills__grid">
+         <div class="skills__category">
+           <div class="skills__category-title">{{ allSkillsText$ | async }}</div>
+      <div class="skills__category-list">
+        <div class="skills__item" *ngFor="let s of skills">
+          <div class="skills__item-name">
+            <span class="name">{{ s.name }}</span>
+            <span class="level">{{ s.level }}%</span>
+          </div>
+          <div class="skills__item-progress">
+            <div class="skills__item-progress-bar" [style.width.%]="s.level"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

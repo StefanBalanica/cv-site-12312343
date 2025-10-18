@@ -1,0 +1,30 @@
+<section class="contact container" data-aos="fade-up">
+  <h2 class="section-title">Contact</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact__form">
+    <div class="form__group">
+      <label class="form__label" for="name">Nume</label>
+      <input id="name" type="text" class="form__input" formControlName="name" />
+      <div class="form__error" *ngIf="getFieldError('name')">{{ getFieldError('name') }}</div>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="email">Email</label>
+      <input id="email" type="email" class="form__input" formControlName="email" />
+      <div class="form__error" *ngIf="getFieldError('email')">{{ getFieldError('email') }}</div>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="subject">Subiect</label>
+      <input id="subject" type="text" class="form__input" formControlName="subject" />
+      <div class="form__error" *ngIf="getFieldError('subject')">{{ getFieldError('subject') }}</div>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="message">Mesaj</label>
+      <textarea id="message" rows="5" class="form__textarea" formControlName="message"></textarea>
+      <div class="form__error" *ngIf="getFieldError('message')">{{ getFieldError('message') }}</div>
+    </div>
+    <button class="btn btn--primary" type="submit" [disabled]="isSubmitting">
+      <span *ngIf="!isSubmitting">Trimite</span>
+      <span *ngIf="isSubmitting" class="loading">Se trimite...</span>
+    </button>
+    <div class="form__success" *ngIf="submitMessage">{{ submitMessage }}</div>
+  </form>
+</section>

@@ -1,0 +1,30 @@
+<header class="header" [class.scrolled]="isScrolled" [class.dark]="isDarkMode$ | async">
+  <nav class="nav">
+    <div class="nav__container">
+      <div class="nav__logo">
+        <a href="#home" (click)="scrollToSection('home')" class="nav__logo-link">
+          <span class="nav__logo-text">SB</span>
+        </a>
+      </div>
+
+      <div class="nav__menu" [class.active]="isMobileMenuOpen">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" (click)="scrollToSection('home')" class="nav__link">{{ homeText$ | async }}</a></li>
+          <li class="nav__item"><a href="#skills" (click)="scrollToSection('skills')" class="nav__link">{{ skillsText$ | async }}</a></li>
+          <li class="nav__item"><a href="#projects" (click)="scrollToSection('projects')" class="nav__link">{{ projectsText$ | async }}</a></li>
+          <li class="nav__item"><a href="#contact" (click)="scrollToSection('contact')" class="nav__link">{{ contactText$ | async }}</a></li>
+        </ul>
+      </div>
+
+           <div class="nav__actions">
+             <app-language-toggle></app-language-toggle>
+             <app-theme-toggle></app-theme-toggle>
+             <button class="nav__toggle" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen" aria-label="Meniu mobil">
+               <span class="nav__toggle-line"></span>
+               <span class="nav__toggle-line"></span>
+               <span class="nav__toggle-line"></span>
+             </button>
+           </div>
+    </div>
+  </nav>
+</header>

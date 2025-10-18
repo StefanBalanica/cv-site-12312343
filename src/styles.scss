@@ -1,0 +1,97 @@
+/* Global minimalist theme */
+@import 'aos/dist/aos.css';
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f7fb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+  --primary-color: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --accent-color: #06b6d4;
+  --accent-hover: #0891b2;
+}
+
+.dark {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border-color: #334155;
+  --primary-color: #a78bfa;
+  --primary-hover: #8b5cf6;
+  --accent-color: #22d3ee;
+  --accent-hover: #06b6d4;
+}
+
+html { 
+  scroll-behavior: smooth; 
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+* { 
+  box-sizing: border-box; 
+}
+
+/* Prevent horizontal overflow on all elements */
+* {
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
+  max-width: 100vw; /* Ensure body doesn't exceed viewport width */
+}
+
+.container { 
+  max-width: 1120px; 
+  margin: 0 auto; 
+  padding: 0 1rem; 
+  width: 100%;
+  box-sizing: border-box;
+}
+.section { padding: 4rem 0; }
+.section-title {
+  font-size: 2rem; font-weight: 700; text-align: center; margin: 0 0 2rem;
+}
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.75rem 1.25rem; border-radius: 0.5rem; border: 1px solid transparent;
+  font-weight: 600; text-decoration: none; cursor: pointer; transition: all .2s ease;
+}
+.btn--primary { background: var(--primary-color); color: #fff; }
+.btn--primary:hover { background: var(--primary-hover); transform: translateY(-1px); }
+.btn--secondary { background: transparent; color: var(--text-primary); border-color: var(--border-color); }
+.btn--secondary:hover { background: var(--bg-secondary); }
+
+/* Simple cards/grid utilities used by sections */
+.card { 
+  background: var(--bg-primary); 
+  border: 1px solid var(--border-color); 
+  border-radius: 12px; 
+  transition: background .2s ease, border-color .2s ease;
+}
+
+/* Basic form styles used in contact */
+.form__group { margin-bottom: 1rem; }
+.form__label { display:block; font-weight: 600; margin-bottom: .25rem; }
+.form__input, .form__textarea {
+  width: 100%; 
+  padding: .75rem 1rem; 
+  border: 1px solid var(--border-color);
+  border-radius: .5rem; 
+  background: var(--bg-primary); 
+  color: var(--text-primary);
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
+}
+.form__input:focus, .form__textarea:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 3px rgba(37,99,235,.15); }
+.form__error { color: #ef4444; font-size: .875rem; margin-top: .25rem; }
+.form__success { color: #10b981; font-weight: 600; margin-top: .75rem; }

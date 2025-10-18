@@ -1,0 +1,67 @@
+.hero {
+  min-height: calc(100vh - 64px);
+  display:grid; align-items:center;
+  position:relative;
+  &::before { 
+    content:''; 
+    position:absolute; 
+    inset: -5% -5% auto -5%; 
+    height: 60%; 
+    z-index:-1;
+    background: radial-gradient(600px 200px at 20% 30%, rgba(96,165,250,.25), transparent),
+                radial-gradient(600px 200px at 80% 40%, rgba(37,99,235,.18), transparent);
+    filter: blur(10px);
+    max-width: 100vw; /* Prevent overflow */
+  }
+
+  &__content { display:grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; }
+  @media (max-width: 900px){ &__content { grid-template-columns: 1fr; text-align:center; } }
+
+  &__text h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); margin: 0 0 .5rem; letter-spacing: -.02em; }
+  &__text .subtitle { color:var(--primary-color); font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+  &__text .title { color: var(--text-secondary); margin-bottom: 1rem; transition: color .2s ease; }
+  &__actions { display:flex; gap:.75rem; flex-wrap:wrap; }
+  @media (max-width: 900px){ &__actions { justify-content:center; } }
+
+  &__image-wrapper { width: 320px; height: 320px; margin-inline:auto; border-radius: 28px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 6px; box-shadow: 0 25px 60px rgba(139,92,246,.25);
+  }
+  &__image-wrapper img, &__image-placeholder { 
+    width:100%; 
+    height:100%; 
+    border-radius: 22px; 
+    object-fit: cover; 
+    background: var(--bg-primary); 
+    display:block; 
+    transition: background .2s ease;
+  }
+  &__image-placeholder { 
+    display:grid; 
+    place-items:center; 
+    font-size: 64px; 
+    color: var(--accent-color); 
+    transition: color .2s ease;
+  }
+
+  .hero__social { display:flex; gap:.5rem; margin-top: .75rem; }
+  .hero__social-link { 
+    width: 40px; 
+    height: 40px; 
+    display:grid; 
+    place-items:center; 
+    border-radius: 10px; 
+    background: var(--bg-primary); 
+    border:1px solid var(--border-color); 
+    color: var(--text-primary); 
+    transition: transform .15s ease, box-shadow .15s ease, background .2s ease, border-color .2s ease, color .2s ease; 
+  }
+  .hero__social-link:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 10px 18px rgba(0,0,0,.08); 
+  }
+  .dark .hero__social-link:hover {
+    box-shadow: 0 10px 18px rgba(0,0,0,.3);
+  }
+}
+

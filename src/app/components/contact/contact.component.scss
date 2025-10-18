@@ -1,0 +1,14 @@
+.contact {
+  &__form { 
+    background: var(--bg-primary); 
+    border:1px solid var(--border-color); 
+    border-radius: 16px; 
+    padding: 1rem; 
+    box-shadow: 0 10px 24px rgba(0,0,0,.06); 
+    transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
+  }
+  .dark &__form {
+    box-shadow: 0 10px 24px rgba(0,0,0,.2);
+  }
+}
+
