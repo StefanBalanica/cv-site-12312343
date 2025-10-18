@@ -27,6 +27,6 @@ export class AppComponent implements OnInit {
 
   async ngOnInit() {
     const AOS = await import('aos');
-    AOS.init({ duration: 800, easing: 'ease-out', once: true });
+    AOS.default.init({ duration: 800, easing: 'ease-out', once: true });
   }
 }
