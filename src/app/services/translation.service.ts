@@ -23,11 +23,11 @@ export class TranslationService {
   }
 
   private loadTranslations(language: Language) {
-    this.http.get(`/i18n/${language}.json`)
+    this.http.get(`./i18n/${language}.json`)
       .pipe(
         catchError(() => {
           console.warn(`Failed to load translations for ${language}, falling back to English`);
-          return this.http.get('/i18n/en.json');
+          return this.http.get('./i18n/en.json');
         })
       )
       .subscribe(translations => {
