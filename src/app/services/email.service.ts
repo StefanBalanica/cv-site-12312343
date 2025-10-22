@@ -19,19 +19,12 @@ export class EmailService {
 
   constructor() {
     // Inițializează EmailJS cu cheia publică
-    if (this.PUBLIC_KEY !== 'YOUR_PUBLIC_KEY') {
-      emailjs.init(this.PUBLIC_KEY);
-    }
+    emailjs.init(this.PUBLIC_KEY);
   }
 
   async sendEmail(emailData: EmailData): Promise<{ success: boolean; message: string }> {
-    // Verifică dacă EmailJS este configurat
-    if (this.PUBLIC_KEY === 'YOUR_PUBLIC_KEY' || this.SERVICE_ID === 'YOUR_SERVICE_ID' || this.TEMPLATE_ID === 'YOUR_TEMPLATE_ID') {
-      return {
-        success: false,
-        message: 'Serviciul de email nu este configurat încă. Te rog să mă contactezi direct la stefanbalanica22@yahoo.com'
-      };
-    }
+    console.log('Sending email with data:', emailData);
+    console.log('Using config:', { SERVICE_ID: this.SERVICE_ID, TEMPLATE_ID: this.TEMPLATE_ID, PUBLIC_KEY: this.PUBLIC_KEY });
 
     try {
       const templateParams = {
