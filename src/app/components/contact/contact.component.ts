@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
-import emailjs from '@emailjs/browser';
+import { EmailService, EmailData } from '../../services/email.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,6 +12,8 @@ import emailjs from '@emailjs/browser';
 })
 export class ContactComponent {
   private fb = inject(FormBuilder);
+  private emailService = inject(EmailService);
+  
   contactForm = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(2)]],
     email: ['', [Validators.required, Validators.email]],
@@ -21,8 +23,7 @@ export class ContactComponent {
 
   isSubmitting = false;
   submitMessage = '';
-
-  constructor() {}
+  isSuccess = false;
 
   getFieldError(field: string): string | null {
     const control = this.contactForm.get(field);
@@ -41,25 +42,26 @@ export class ContactComponent {
 
     this.isSubmitting = true;
     this.submitMessage = '';
+    this.isSuccess = false;
+
+    const emailData: EmailData = {
+      name: this.contactForm.value.name || '',
+      email: this.contactForm.value.email || '',
+      subject: this.contactForm.value.subject || '',
+      message: this.contactForm.value.message || ''
+    };
 
     try {
-      await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
-        {
-          from_name: this.contactForm.value.name,
-          from_email: this.contactForm.value.email,
-          subject: this.contactForm.value.subject,
-          message: this.contactForm.value.message,
-        },
-        {
-          publicKey: 'YOUR_PUBLIC_KEY',
-        }
-      );
-      this.submitMessage = 'Mesajul a fost trimis cu succes!';
-      this.contactForm.reset();
-    } catch (e) {
-      this.submitMessage = 'A apărut o eroare. Încearcă din nou.';
+      const result = await this.emailService.sendEmail(emailData);
+      this.submitMessage = result.message;
+      this.isSuccess = result.success;
+      
+      if (result.success) {
+        this.contactForm.reset();
+      }
+    } catch (error) {
+      this.submitMessage = 'A apărut o eroare neașteptată. Te rog să încerci din nou.';
+      this.isSuccess = false;
     } finally {
       this.isSubmitting = false;
     }

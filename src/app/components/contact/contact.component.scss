@@ -12,3 +12,39 @@
   }
 }
 
+.form {
+  &__message {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  &__success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+
+  &__error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+
+  .dark &__success {
+    background-color: #1e4a2e;
+    color: #a3d9a4;
+    border-color: #2d5a3d;
+  }
+
+  .dark &__error {
+    background-color: #4a1e1e;
+    color: #f5a3a3;
+    border-color: #5a2d2d;
+  }
+}
+

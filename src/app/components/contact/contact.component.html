@@ -25,6 +25,11 @@
       <span *ngIf="!isSubmitting">Trimite</span>
       <span *ngIf="isSubmitting" class="loading">Se trimite...</span>
     </button>
-    <div class="form__success" *ngIf="submitMessage">{{ submitMessage }}</div>
+    <div class="form__message" 
+         [class.form__success]="isSuccess" 
+         [class.form__error]="!isSuccess && submitMessage" 
+         *ngIf="submitMessage">
+      {{ submitMessage }}
+    </div>
   </form>
 </section>
