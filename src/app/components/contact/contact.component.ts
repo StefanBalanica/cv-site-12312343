@@ -24,6 +24,7 @@ export class ContactComponent {
   isSubmitting = false;
   submitMessage = '';
   isSuccess = false;
+  testResult: any = null;
 
   getFieldError(field: string): string | null {
     const control = this.contactForm.get(field);
@@ -64,6 +65,25 @@ export class ContactComponent {
       this.isSuccess = false;
     } finally {
       this.isSubmitting = false;
+    }
+  }
+
+  async testEmail() {
+    this.testResult = null;
+    const testData: EmailData = {
+      name: 'Test User',
+      email: 'test@example.com',
+      subject: 'Test Contact Form',
+      message: 'This is a test message to verify the contact form functionality.'
+    };
+
+    try {
+      this.testResult = await this.emailService.sendEmail(testData);
+    } catch (error) {
+      this.testResult = {
+        success: false,
+        message: 'Test error: ' + error
+      };
     }
   }
 }

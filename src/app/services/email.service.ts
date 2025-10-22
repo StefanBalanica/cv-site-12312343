@@ -30,7 +30,6 @@ export class EmailService {
       const templateParams = {
         from_name: emailData.name,
         from_email: emailData.email,
-        to_email: 'stefanbalanica22@yahoo.com',
         subject: emailData.subject,
         message: emailData.message,
         reply_to: emailData.email
