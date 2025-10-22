@@ -14,9 +14,9 @@
 // 4. Înlocuiește valorile de mai jos cu ID-urile tale din EmailJS:
 
 export const EMAILJS_CONFIG = {
-  SERVICE_ID: 'YOUR_SERVICE_ID', // Înlocuiește cu ID-ul serviciului tău
-  TEMPLATE_ID: 'YOUR_TEMPLATE_ID', // Înlocuiește cu ID-ul template-ului tău
-  PUBLIC_KEY: 'YOUR_PUBLIC_KEY' // Înlocuiește cu cheia ta publică
+  SERVICE_ID: 'service_1mzvp58', // Înlocuiește cu ID-ul serviciului tău
+  TEMPLATE_ID: 'template_oxmbmpl', // Înlocuiește cu ID-ul template-ului tău
+  PUBLIC_KEY: 'NYil6CgZo18MsjOG1' // Înlocuiește cu cheia ta publică
 };
 
 // Template de email recomandat pentru EmailJS:
@@ -33,3 +33,4 @@ Mesaj:
 Acest mesaj a fost trimis prin formularul de contact de pe site-ul personal.
 Răspunde la: {{reply_to}}
 */
+
