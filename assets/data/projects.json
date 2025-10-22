@@ -16,7 +16,7 @@
     "title": "Enjoy Café - Site",
     "description": "Aplicație web Angular responsive pentru \"Enjoy Café\" cu arhitectură modulară și sistem de shopping cart.",
     "longDescription": "Aplicație web Angular responsive dezvoltată pentru \"Enjoy Café\" folosind arhitectură modulară cu componente standalone și management de stare bazat pe servicii. Implementează caruseluri de produse dinamice, sistem de shopping cart și navigare cu scroll smooth. Design-ul include meniul de sus sensibil la scroll și notificări pop-up temporare. Folosește SCSS pentru stilizare avansată, animații și design coeziv aliniat cu branding-ul cafenelei.",
-    "image": "./assets/images/projects/calculator.jpg",
+    "image": "./assets/images/projects/enjoy-cafe.png",
     "technologies": ["Angular", "TypeScript", "SCSS", "Standalone Components", "Service-based State"],
     "githubUrl": "https://github.com/StefanBalanica/EnjoyCafe-site",
     "demoUrl": null,
