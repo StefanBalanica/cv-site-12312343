@@ -23,9 +23,6 @@ export class EmailService {
   }
 
   async sendEmail(emailData: EmailData): Promise<{ success: boolean; message: string }> {
-    console.log('Sending email with data:', emailData);
-    console.log('Using config:', { SERVICE_ID: this.SERVICE_ID, TEMPLATE_ID: this.TEMPLATE_ID, PUBLIC_KEY: this.PUBLIC_KEY });
-
     try {
       const templateParams = {
         from_name: emailData.name,
@@ -41,7 +38,6 @@ export class EmailService {
         templateParams
       );
 
-      console.log('Email sent successfully:', response);
       return {
         success: true,
         message: 'Mesajul a fost trimis cu succes! Vă voi răspunde în cel mai scurt timp.'
