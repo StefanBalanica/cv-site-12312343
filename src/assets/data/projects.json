@@ -4,7 +4,7 @@
     "title": "Travel Tales",
     "description": "Aplicație web modernă Angular 19 pentru jurnalul personal de călătorii cu interfață intuitivă și vizualizare duală.",
     "longDescription": "Travel Tales este o aplicație web modernă Angular 19 proiectată ca jurnal personal de călătorii. Include interfață intuitivă cu moduri de vizualizare duală (carduri și tabel) pentru documentarea și vizualizarea experiențelor de călătorie. Aplicația suportă operațiuni CRUD complete, încărcare imagini, etichetare personalizată, urmărirea statusului călătoriilor (vizitate/viitoare) și vizualizare geografică. Construită cu TypeScript, RxJS și ng-zorro-antd, include lazy loading, route guards și stilizare SCSS responsive.",
-    "image": "./assets/images/projects/calculator.jpg",
+    "image": "./assets/images/projects/travel-tales.png",
     "technologies": ["Angular 19", "TypeScript", "RxJS", "ng-zorro-antd", "SCSS", "Lazy Loading"],
     "githubUrl": "https://github.com/prvu7/MyTrips-with-Angular",
     "demoUrl": null,
