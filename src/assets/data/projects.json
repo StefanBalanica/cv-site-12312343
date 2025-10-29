@@ -40,7 +40,7 @@
     "title": "Ether - Joc Strategic",
     "description": "Joc strategic pentru 2 jucători inspirat din X și O și Connect 4, cu reguli extinse și elemente strategice.",
     "longDescription": "Ether este un joc strategic pentru 2 jucători inspirat din X și O și Connect 4, dar cu reguli extinse. Jucătorii plasează cărți numerotate pe o tablă, iar numerele mai mari pot acoperi cele mai mici. Regulile includ elemente strategice precum iluzie, explozie, vrăjitori și puteri magice, oferind o varietate de moduri de joc (practică, dueluri, turnee și viteză). Jocul se termină prin realizarea unei linii câștigătoare, completarea tablei sau epuizarea cărților. Am lucrat la logica programului, funcțiile de bază și afișare, coordonând o echipă de 4 persoane pentru realizarea acestui proiect la facultate.",
-    "image": "./assets/images/projects/calculator.jpg",
+    "image": "./assets/images/projects/ether-game.jpg",
     "technologies": ["C++", "Modern C++", "Game Logic", "Team Coordination"],
     "githubUrl": "https://github.com/CostinBangala28/ProjectModernCPP",
     "demoUrl": null,
