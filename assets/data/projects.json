@@ -64,7 +64,7 @@
     "title": "X&0 - Genetic Algorithm",
     "description": "Proiect universitar de joc X&0 cu algoritm genetic, dezvoltat în echipă de 4 studenți.",
     "longDescription": "X&0-genetic algorithm este un proiect universitar dezvoltat de o echipă de 4 studenți pe care am coordonat-o. Împreună am dezvoltat un joc de X&0 în care utilizatorul uman joacă împotriva computerului, care învață să joace mai bine și să aibă rate de câștig mai mari din jocurile jucate. Programul este realizat folosind tehnica algoritmului genetic și este scris în limbajul C++. Am lucrat la majoritatea funcțiilor și am avut grijă de organizarea echipei.",
-    "image": "./assets/images/projects/calculator.jpg",
+    "image": "./assets/images/projects/ x0-genetic.png",
     "technologies": ["C++", "Genetic Algorithm", "AI", "Team Leadership", "Game Development"],
     "githubUrl": "https://github.com/StefanBalanica/X-0",
     "demoUrl": null,
