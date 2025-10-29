@@ -52,21 +52,9 @@
     "title": "Online Library",
     "description": "Proiect de bibliotecă online realizat la facultate cu Java, Spring Boot și interfață web.",
     "longDescription": "Biblioteca online este un proiect realizat în cadrul facultății unde poți vedea cele 5 cărți cele mai recent adăugate în bibliotecă, căuta, șterge sau adăuga cărți. Prin acest proiect am învățat să folosesc Java, framework-ul Spring-Boot, JavaScript, HTML și CSS. Proiectul demonstrează cunoștințele de backend development și integrarea cu frontend-ul web.",
-    "image": "./assets/images/projects/calculator.jpg",
+    "image": "./assets/images/projects/online-library.png",
     "technologies": ["Java", "Spring Boot", "JavaScript", "HTML", "CSS", "Backend Development"],
     "githubUrl": "https://github.com/StefanBalanica/Proiect-MIP",
-    "demoUrl": null,
-    "featured": false,
-    "category": "web"
-  },
-  {
-    "id": "uni-e",
-    "title": "Uni-e",
-    "description": "Proiect dedicat studenților viitori pentru a-i ajuta să găsească universitatea potrivită.",
-    "longDescription": "Uni-e este un proiect dedicat studenților viitori, care își propune să-i ajute să găsească universitatea potrivită pentru ei. Proiectul își propune să pună în primul plan dorințele și abilitățile fiecărui utilizator și din acest motiv am vorbit cu cât mai mulți studenți despre lucrurile pe care și le-ar fi dorit să le știe despre universitate. Am fost implicat în design-ul website-ului, unde am folosit HTML și CSS, precum și în structurarea și planificarea proiectului.",
-    "image": "./assets/images/projects/calculator.jpg",
-    "technologies": ["HTML", "CSS", "Web Design", "Project Planning", "User Research"],
-    "githubUrl": "https://github.com/StefanBalanica/Uni-e",
     "demoUrl": null,
     "featured": false,
     "category": "web"
